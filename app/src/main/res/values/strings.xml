@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">myBuddy</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_book_room">Book Room</string>
+    <string name="wall_paper">wall paper</string>
+
+    <array name="rooms">
+        <item>Vasant</item>
+        <item>Hemant</item>
+    </array>
+    <string name="title_activity_attendance">Attendance</string>
+</resources>

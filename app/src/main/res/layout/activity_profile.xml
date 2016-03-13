@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.persistent.nammabangalore.mybuddy.Activity.ProfileActivity">
+
+    <ImageView
+        android:id="@+id/header_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/wall_paper"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_profile_back" />
+
+    <LinearLayout
+        android:id="@+id/informations_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_imageview"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingTop="32dp">
+
+        <com.persistent.nammabangalore.mybuddy.Utils.FontView
+            android:id="@+id/profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.persistent.nammabangalore.mybuddy.Utils.FontView
+            android:id="@+id/profile_employee_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:textSize="18sp" />
+
+        <com.persistent.nammabangalore.mybuddy.Utils.FontView
+            android:id="@+id/profile_designation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/informations_container"
+        android:background="@android:color/white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/holo_blue_dark" />
+
+            <com.persistent.nammabangalore.mybuddy.Utils.FontView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Profile Information"
+                android:textSize="16sp" />
+
+            <View
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@android:color/holo_blue_dark" />
+
+            <com.persistent.nammabangalore.mybuddy.Utils.FontView
+                android:id="@+id/profile_bu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_group"
+                android:drawableStart="@drawable/ic_group"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+
+            <com.persistent.nammabangalore.mybuddy.Utils.FontView
+                android:id="@+id/profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email"
+                android:drawableStart="@drawable/ic_email"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+
+            <com.persistent.nammabangalore.mybuddy.Utils.FontView
+                android:id="@+id/profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawableStart="@drawable/ic_phone"
+                android:padding="2dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_above="@+id/informations_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-16dp"
+        android:src="@drawable/hari"
+        app:civ_border_color="#FFFFFFFF"
+        app:civ_border_width="1dp" />
+
+</RelativeLayout>

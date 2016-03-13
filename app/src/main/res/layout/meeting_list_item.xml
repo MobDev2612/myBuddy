@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:background="@android:color/white"
+    android:padding="5dp">
+
+    <com.persistent.nammabangalore.mybuddy.Utils.FontView
+        android:id="@+id/meeting_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:textSize="20sp" />
+
+    <com.persistent.nammabangalore.mybuddy.Utils.FontView
+        android:id="@+id/meeting_booked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/meeting_name"
+        android:layout_marginTop="5dp"
+        android:textStyle="italic"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/meeting_booked"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <com.persistent.nammabangalore.mybuddy.Utils.FontView
+            android:id="@+id/meeting_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textSize="16sp" />
+
+        <com.persistent.nammabangalore.mybuddy.Utils.FontView
+            android:id="@+id/meeting_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
